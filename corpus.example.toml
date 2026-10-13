@@ -1,0 +1,29 @@
+# Copy to corpus.local.toml, point the paths at your own clones, and run with
+#   STUDBOOK_CORPUS=corpus.local.toml studbook-agent ask "..."
+# The index is built locally on first use and cached in .index/; nothing leaves the machine
+# except the passages the agent reads, which go to the model.
+
+[[repo]]
+name = "agentops"
+path = "~/C.Projects/agentops"
+include = ["README.md", "CONTRIBUTING.md", "docs/**/*.md"]
+
+[[repo]]
+name = "workhorse"
+path = "~/C.Projects/workhorse"
+include = ["README.md", "CHANGELOG.md", "docs/**/*.md"]
+
+[[repo]]
+name = "studbook"
+path = "~/C.Projects/studbook"
+include = ["README.md", "docs/**/*.md"]
+
+[[repo]]
+name = "shu"
+path = "~/C.Projects/Shu"
+include = ["README.md", "docs/adr/*.md", "docs/research/*.md", "docs/superpowers/specs/*.md"]
+
+[[repo]]
+name = "wasl"
+path = "~/C.Projects/wasl"
+include = ["README.md", "plan/*.md", "checklists/*.md"]
