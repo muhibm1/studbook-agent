@@ -1,0 +1,37 @@
+# The public corpus: the published snapshots of the projects, fetched by
+# scripts/fetch_public_corpus.sh into ./corpus. Point STUDBOOK_CORPUS at your own file
+# (see corpus.example.toml) to index private clones instead.
+
+[[repo]]
+name = "agentops"
+path = "corpus/agentops-snapshot"
+include = ["**/*.md"]
+
+[[repo]]
+name = "workhorse"
+path = "corpus/workhorse-snapshot"
+include = ["**/*.md"]
+exclude = ["agents/**", "desk/**"]
+
+[[repo]]
+name = "studbook"
+path = "corpus/studbook-snapshot"
+include = ["**/*.md"]
+
+[[repo]]
+name = "paddock"
+path = "corpus/paddock-snapshot"
+include = ["**/*.md"]
+
+[[repo]]
+name = "portfolio"
+path = "corpus/Portfolio"
+# The site's change folders hold very long generated specs and test logs; keep the decisions.
+include = [
+  "README.md",
+  "docs/design-brief.md",
+  "docs/sdlc/*/adr/*.md",
+  "docs/sdlc/*/brief.md",
+  "docs/sdlc/*/ship.md",
+  "docs/sdlc/*/retro.md",
+]

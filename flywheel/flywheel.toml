@@ -1,0 +1,23 @@
+# Flywheel's view of the Studbook agent: ask each question, check the citations and refusals,
+# and (with STUDBOOK_JUDGE=1) have a model judge the answer against the reference.
+[flywheel]
+target = "studbook_flywheel:target"
+evaluators = [
+  "studbook_flywheel:found_the_source",
+  "studbook_flywheel:refused_correctly",
+  "studbook_flywheel:answer_correct",
+]
+dataset = "dataset.jsonl"
+repetitions = 1
+langsmith_dataset = "studbook-agent-flywheel"
+
+[gate]
+max_broken = 0
+
+[mine]
+project = "studbook-agent"
+rules = [
+  { key = "found_the_source", below = 1 },
+  { key = "refused_correctly", below = 1 },
+  { key = "answer_correct", below = 1 },
+]

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "studbook-agent"
+version = "0.1.0"
+description = "A LangGraph agent that answers why a decision was made, citing the engineering record."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [{ name = "Muhammad Muhibullah" }]
+# Exact pins and licences live in requirements.txt.
+dependencies = []
+
+[project.scripts]
+studbook-agent = "studbook_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["corpus"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,11 @@
+__pycache__/
+*.egg-info/
+.venv/
+.index/
+corpus/
+corpus.local.toml
+.env
+.flywheel/
+.pytest_cache/
+.ruff_cache/
+.langgraph_api/
