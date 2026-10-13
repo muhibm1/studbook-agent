@@ -1,0 +1,13 @@
+{
+  "dependencies": [
+    "."
+  ],
+  "graphs": {
+    "studbook": "./src/studbook_agent/graph.py:platform_graph"
+  },
+  "python_version": "3.11",
+  "dockerfile_lines": [
+    "RUN apt-get update && apt-get install -y --no-install-recommends git && rm -rf /var/lib/apt/lists/*",
+    "RUN cd /deps/studbook-agent && sh scripts/fetch_public_corpus.sh"
+  ]
+}

@@ -1,0 +1,1455 @@
+{
+  "backend": "langsmith",
+  "created_at": "2026-10-13T09:11:59+00:00",
+  "dataset_version": "616da40513be",
+  "examples": {
+    "08d980463144": "{\"question\":\"Why are the site's typefaces bundled with the site rather than loaded from Google Fonts?\"}",
+    "09bfe7836872": "{\"question\":\"Why was the incident graph built as an explicit state graph instead of using an agent framework like Deep Agents with human-in-the-loop middleware\u2026",
+    "0c8447858d26": "{\"question\":\"What agent-time budget does each WorkHorse risk tier get?\"}",
+    "0fb16663a1bc": "{\"question\":\"Why did the team pick Electron over Tauri for the WorkHorse desktop app?\"}",
+    "0fce8938eff8": "{\"question\":\"Which model generates the cited answers, and how many model calls does it make per question?\"}",
+    "1459a15d30f2": "{\"question\":\"How many builder agents can run in parallel during the build phase?\"}",
+    "172b0aad84bc": "{\"question\":\"The portfolio first served deep links through a copied 404 page; why was that later changed to writing a real page per route?\"}",
+    "184fed56666d": "{\"question\":\"How does a human approval work in AgentOps compared with WorkHorse?\"}",
+    "1ab7b9bb8cb2": "{\"question\":\"How is the investigation budget for evidence reads calculated?\"}",
+    "1fb5c5720c81": "{\"question\":\"Which Node release line does the portfolio repository tell developers and CI to use?\"}",
+    "3491cee11fdb": "{\"question\":\"Why was the smallest risk tier's agent-time budget raised from 15 minutes?\"}",
+    "3a7c93af1edd": "{\"question\":\"A static site with no logins or user input arguably doesn't need a Content Security Policy, so why does the portfolio ship one?\"}",
+    "3e88e0b3cf8a": "{\"question\":\"What did the last release of the desktop app change compared with the one before it?\"}",
+    "4d631bf00241": "{\"question\":\"How do AgentOps and Studbook each stop their held-out evaluation split from being used for tuning?\"}",
+    "5b652295a60a": "{\"question\":\"Which typeface families does the redesigned portfolio use?\"}",
+    "7f28effa57a4": "{\"question\":\"How is the Studbook search that runs inside the desktop app kept equivalent to the reference Python implementation?\"}",
+    "7fdd054a3cd3": "{\"question\":\"Why won't the question-answering service start without an API key instead of just running unauthenticated?\"}",
+    "825258e4b7a3": "{\"question\":\"How did the Gate screen's approve action change between the original desktop app design and the two-gates release?\"}",
+    "82add0d0bc57": "{\"question\":\"Why are the GitHub Actions in the deploy workflow pinned to commit hashes instead of version tags like v5?\"}",
+    "918a086b2e3a": "{\"question\":\"When an operator submits an invalid edit at the approval pause, why doesn't the approval step just keep prompting in a loop until the edit is vali\u2026",
+    "98110f94b4d9": "{\"question\":\"Why does the live model smoke test run from its own workflow file rather than as an extra manually-triggered job in the main CI workflow?\"}",
+    "9874c0fbfa9a": "{\"question\":\"Why does the hybrid retrieval use a reciprocal rank fusion constant of 10 rather than the usual 60?\"}",
+    "9c6d14545f99": "{\"question\":\"What is the minimum number of passing tests the incident-response project's CI requires before the job counts as green?\"}",
+    "a3cdfa980db9": "{\"question\":\"What made vector queries ignore the HNSW index and fall back to a sequential scan?\"}",
+    "a7638d613df4": "{\"question\":\"How much does a client pay per month to license WorkHorse?\"}",
+    "ae74c50f855a": "{\"question\":\"How did retrieval quality change when an OpenAI embedding model was tried in place of the local embedding model?\"}",
+    "b13cacf3b60c": "{\"question\":\"Why doesn't the portfolio use hash-based URLs to avoid the GitHub Pages deep-link problem?\"}",
+    "c00a54bdbb07": "{\"question\":\"How many visitors did the portfolio site get in its first month after launch?\"}",
+    "db19b9f43540": "{\"question\":\"When the ECC plugin was evaluated, why didn't the team swap WorkHorse's own agents out for ECC's?\"}",
+    "e76850ad03ed": "{\"question\":\"Which human approvals did a tier 2 change need under the original WorkHorse design, and which does it need now?\"}",
+    "e79a9471de5f": "{\"question\":\"Did splitting a question into sub-questions help answer questions that span two documents, and why was that approach dropped?\"}",
+    "f850e62b6f57": "{\"question\":\"Which on-call paging service, such as PagerDuty or Opsgenie, sends production alerts into AgentOps?\"}",
+    "f8d04639c211": "{\"question\":\"Why does the investigation router pick evidence sources with a keyword table instead of asking the model which sources to read?\"}",
+    "f96917d2d74b": "{\"question\":\"Which hero headline won the A/B test run on the portfolio homepage?\"}",
+    "fc977a5e88f6": "{\"question\":\"Why did the team cut the number of human approval points down to Design and Ship?\"}",
+    "feae99daba47": "{\"question\":\"How close do the top two root-cause scores have to be before the incident graph treats the diagnosis as ambiguous and escalates?\"}"
+  },
+  "git_sha": "56b69862e5607078b470ca9aa2cdfcd8c58a6792",
+  "label": "haiku-v1-x3",
+  "name": "flywheel-haiku-v1-x3-05f15409",
+  "repetitions": 3,
+  "runs": [
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "98110f94b4d9",
+      "latency_ms": 11332.9,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-36fd-7fb0-bd9b-20f3a33739d3?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "825258e4b7a3",
+      "latency_ms": 12822.5,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 0.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-36ff-73e1-8b75-4960a353b9de?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "fc977a5e88f6",
+      "latency_ms": 13409.2,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-36fe-7382-8334-777d70f674be?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "82add0d0bc57",
+      "latency_ms": 14952.5,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-36fc-7dd3-8ddd-d123a04f1ffe?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "ae74c50f855a",
+      "latency_ms": 9098.3,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-6343-78d3-80a5-81983a5ef273?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "3491cee11fdb",
+      "latency_ms": 5941.4,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-7165-7cb1-ae94-0bc69d52dd0e?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "e76850ad03ed",
+      "latency_ms": 9015.0,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-6916-7361-8a39-245c2fff906f?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "918a086b2e3a",
+      "latency_ms": 9377.0,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-6b60-7d02-823e-c973d8b5961b?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "0fce8938eff8",
+      "latency_ms": 5154.4,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-9001-72e1-8df3-72d076962e9b?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "a7638d613df4",
+      "latency_ms": 7671.2,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-8c4d-7bf1-9488-4fd0e24aa7a3?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "0c8447858d26",
+      "latency_ms": 6168.9,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-a424-7710-9d76-3e4a60cfa4aa?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "4d631bf00241",
+      "latency_ms": 13749.9,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 0.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-86cd-7292-a98e-34ca0bc9ddf1?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "3a7c93af1edd",
+      "latency_ms": 11904.0,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-889a-7b10-8594-d3e335992418?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "db19b9f43540",
+      "latency_ms": 8540.6,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-bc3d-7261-957d-0e928ee8afc8?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "3e88e0b3cf8a",
+      "latency_ms": 12201.5,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 0.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-aa45-7030-b9d9-6fef06f1c9c2?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "1ab7b9bb8cb2",
+      "latency_ms": 8782.5,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-b71b-7661-bb0d-972be66bf60b?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "f8d04639c211",
+      "latency_ms": 7709.2,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-bc83-7310-a2ce-8b09503897b3?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "1459a15d30f2",
+      "latency_ms": 5791.8,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 0.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-dd9a-7402-9dde-ab2fc07c1621?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "09bfe7836872",
+      "latency_ms": 8665.4,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-d96a-7d51-90fd-e895daae94e9?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "172b0aad84bc",
+      "latency_ms": 11709.8,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-daa1-7182-8139-ae3fcf09b58d?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "7fdd054a3cd3",
+      "latency_ms": 7605.8,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 0.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-f43a-7122-b1a1-e467a31f7a24?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "7f28effa57a4",
+      "latency_ms": 14110.9,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 0.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-d9ef-7843-b705-f598bdb4244d?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "feae99daba47",
+      "latency_ms": 6604.7,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13484-fb43-73b3-b1ce-1596fe7d7afa?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "c00a54bdbb07",
+      "latency_ms": 7795.6,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-085f-7762-a17f-dea9734c6505?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "f96917d2d74b",
+      "latency_ms": 8743.1,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-11f0-7b93-999c-9a6ba87ef430?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "b13cacf3b60c",
+      "latency_ms": 9346.8,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-1510-7230-b4d1-5de9492a8600?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "f850e62b6f57",
+      "latency_ms": 13062.0,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-110e-7281-ae2c-79eeee04ed86?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "0fb16663a1bc",
+      "latency_ms": 10650.8,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-26d3-7130-8710-11b886deddab?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "9874c0fbfa9a",
+      "latency_ms": 8021.8,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-3418-7182-b70d-60aceb8157d1?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "a3cdfa980db9",
+      "latency_ms": 8701.7,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 0.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-3994-7d81-be4e-3f2f78856d92?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "184fed56666d",
+      "latency_ms": 10893.7,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-4414-79f1-b8c7-499e687f4c7c?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "5b652295a60a",
+      "latency_ms": 7604.9,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-506e-7362-870b-958d49bf08a8?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "08d980463144",
+      "latency_ms": 9019.7,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-536e-70b2-b098-d19abd8b4cc4?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "1fb5c5720c81",
+      "latency_ms": 6417.8,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-6ea2-7022-a255-ffbc054ee219?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "9c6d14545f99",
+      "latency_ms": 12010.3,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-5b92-7520-8807-f8597648b8de?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "e79a9471de5f",
+      "latency_ms": 9551.2,
+      "repetition": 1,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-6e24-7ea3-b715-4b378ae37d19?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "82add0d0bc57",
+      "latency_ms": 12032.2,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-76ab-7403-941c-9335147615a7?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "98110f94b4d9",
+      "latency_ms": 9445.3,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-87b4-7f32-948c-f0c1619b7e90?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "fc977a5e88f6",
+      "latency_ms": 11460.9,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-8a7c-74e3-8f9f-cd23face95b4?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "825258e4b7a3",
+      "latency_ms": 11187.7,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 0.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-9373-7ba0-be33-499cc735ee73?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "ae74c50f855a",
+      "latency_ms": 9309.4,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-a5ab-7e13-846f-8a5962401961?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "e76850ad03ed",
+      "latency_ms": 9042.8,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-ac9a-74a3-87ad-2cb0d88b6c61?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "3491cee11fdb",
+      "latency_ms": 6050.2,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-bf27-7e53-a924-60d807a46b04?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "918a086b2e3a",
+      "latency_ms": 9257.9,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-b742-7eb1-9caa-ac66566e4b19?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "0fce8938eff8",
+      "latency_ms": 5345.5,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-db6c-77b0-a7ce-430158f3244f?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "a7638d613df4",
+      "latency_ms": 7937.8,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-d6ca-7ab2-a166-c8b977f74bb2?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "4d631bf00241",
+      "latency_ms": 13566.8,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 0.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-ca09-7100-855b-b7cc726f1b7c?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "3a7c93af1edd",
+      "latency_ms": 11302.3,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-cfee-76a3-81ff-dc2cb065a2f7?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "0c8447858d26",
+      "latency_ms": 5931.5,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-f04e-7c93-a8c8-ef93d6b0d5dc?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "1ab7b9bb8cb2",
+      "latency_ms": 8730.7,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-fc14-7711-acae-5748bd9bfecb?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "db19b9f43540",
+      "latency_ms": 8568.2,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-ff08-7db1-b6e1-c07011290000?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "f8d04639c211",
+      "latency_ms": 8127.9,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-077a-7372-b994-a0202dfefd9b?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "3e88e0b3cf8a",
+      "latency_ms": 11952.0,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 0.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13485-f5cc-7d72-9ad6-388f3c449d8e?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "09bfe7836872",
+      "latency_ms": 8806.9,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-1e2f-7c92-966d-548af0e0a74f?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "172b0aad84bc",
+      "latency_ms": 11046.1,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-247c-7c50-9894-bf21b863d6b9?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "1459a15d30f2",
+      "latency_ms": 12369.9,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 0.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-273a-74b0-818d-4da13a4208e9?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "7f28effa57a4",
+      "latency_ms": 14064.1,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 0.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-2081-7691-bc1a-bbff8c36181a?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "7fdd054a3cd3",
+      "latency_ms": 7813.9,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 0.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-4097-7183-aad7-d9fbfba324c9?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "feae99daba47",
+      "latency_ms": 6610.0,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-4fa3-7003-bc99-daf32aae5af3?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "c00a54bdbb07",
+      "latency_ms": 7716.5,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-5771-75f0-beda-fc315287ada1?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "f96917d2d74b",
+      "latency_ms": 8868.2,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-5f1d-7953-9a84-9184b2493c14?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "f850e62b6f57",
+      "latency_ms": 12857.3,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-578c-7070-b6e2-646f0c402695?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "b13cacf3b60c",
+      "latency_ms": 9291.1,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-6975-7a93-962d-472b83b7c74f?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "9874c0fbfa9a",
+      "latency_ms": 8006.3,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-81c1-7ed1-b5a1-35139cf674b7?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "0fb16663a1bc",
+      "latency_ms": 10624.8,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-7596-7290-b392-639b6de1cee3?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "a3cdfa980db9",
+      "latency_ms": 8574.7,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 0.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-89c6-7b92-830f-e394f9021ae7?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "5b652295a60a",
+      "latency_ms": 7663.7,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-9f17-7a81-bf67-4c0907758464?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "184fed56666d",
+      "latency_ms": 10984.5,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-8dc1-76d3-b151-a905163c0ffc?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "08d980463144",
+      "latency_ms": 12915.7,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-a108-72f1-b697-9b4d7cfaffe4?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "1fb5c5720c81",
+      "latency_ms": 6367.8,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-bd07-7ce1-a033-42aa5bc101f0?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "e79a9471de5f",
+      "latency_ms": 9631.0,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-b8aa-7cf3-83dd-2122403da6ee?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "9c6d14545f99",
+      "latency_ms": 12407.2,
+      "repetition": 2,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-ab45-7993-98b3-c596d605956f?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "98110f94b4d9",
+      "latency_ms": 9529.0,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-d5e8-7082-beae-3c8d953f180d?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "82add0d0bc57",
+      "latency_ms": 11793.4,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-d37d-7291-a75c-adaffb581831?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "825258e4b7a3",
+      "latency_ms": 11075.1,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 0.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-de49-7892-be15-9c6db611f069?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "fc977a5e88f6",
+      "latency_ms": 11624.6,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-dbbd-7473-9669-160998bdafcb?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "3491cee11fdb",
+      "latency_ms": 6227.4,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-098c-7581-8003-84ade1cccfc6?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "e76850ad03ed",
+      "latency_ms": 9147.8,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-018f-7613-a3cb-10a7b6549c45?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "ae74c50f855a",
+      "latency_ms": 11612.8,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13486-fb21-7341-a284-d128de3b65a9?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "918a086b2e3a",
+      "latency_ms": 9445.7,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-0926-7730-86ea-cd7a0fc5424c?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "a7638d613df4",
+      "latency_ms": 7863.4,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-287e-7871-8c5d-73b58894a0e7?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "0fce8938eff8",
+      "latency_ms": 5427.6,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-2e0c-7981-b486-0950b218bb41?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "3a7c93af1edd",
+      "latency_ms": 11406.9,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 0.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-254b-7d43-935a-e08b007af0f6?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "4d631bf00241",
+      "latency_ms": 13518.0,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 0.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-21e0-7521-874a-bd284bd29b46?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "0c8447858d26",
+      "latency_ms": 5960.0,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-4340-7e02-8f80-65975731c536?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "1ab7b9bb8cb2",
+      "latency_ms": 8724.2,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-51db-7463-aead-0a1a89006d3a?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "3e88e0b3cf8a",
+      "latency_ms": 11891.5,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 0.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-4736-72f0-a5ba-e45ae903fc58?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "db19b9f43540",
+      "latency_ms": 8841.1,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-56af-7931-b8ae-94f901ff39f3?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "f8d04639c211",
+      "latency_ms": 7664.1,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-5a88-7671-bcea-338f1e4bd25f?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "1459a15d30f2",
+      "latency_ms": 5860.8,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 0.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-7938-7243-a646-c0ef3d4e710e?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "09bfe7836872",
+      "latency_ms": 8644.0,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-73f0-7452-81c4-dddd3f518d18?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "172b0aad84bc",
+      "latency_ms": 10997.6,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-7879-7731-9a07-5680240fa6f2?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "7fdd054a3cd3",
+      "latency_ms": 7686.9,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 0.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-901d-7013-b119-65046bf26547?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "feae99daba47",
+      "latency_ms": 6527.3,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-95b4-7080-ac10-99609d70cb9d?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "c00a54bdbb07",
+      "latency_ms": 7868.8,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-a36f-7572-b07c-da6bf9268f81?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "7f28effa57a4",
+      "latency_ms": 19088.5,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 0.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-75aa-72a1-9127-fc098ffa3c90?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "f96917d2d74b",
+      "latency_ms": 9187.1,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-af34-7b02-816e-bb90068f235f?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "b13cacf3b60c",
+      "latency_ms": 8966.1,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-c03b-7252-ba59-3fd6a77ea6d9?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "f850e62b6f57",
+      "latency_ms": 13026.3,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-ae24-73d2-8651-3bf444ad9d46?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "0fb16663a1bc",
+      "latency_ms": 10752.5,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-c22c-75a0-81c8-2cd7dd19b5e5?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "9874c0fbfa9a",
+      "latency_ms": 8368.9,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-d317-7f33-8395-fa523850bf47?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "a3cdfa980db9",
+      "latency_ms": 8592.1,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 0.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-e107-7f80-9c81-a848eb8cfc57?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "5b652295a60a",
+      "latency_ms": 7636.3,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-ec2d-7191-b5f9-abb5cff72cb2?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "184fed56666d",
+      "latency_ms": 10334.8,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-e341-77d2-8565-81f0696eaf57?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "08d980463144",
+      "latency_ms": 12566.0,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13487-f3c8-74d0-b622-47a6762f913d?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "1fb5c5720c81",
+      "latency_ms": 6243.3,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13488-0ba1-7df1-acab-3d720eb828b4?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "e79a9471de5f",
+      "latency_ms": 9562.6,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13488-0a01-7783-97c4-f56e8ff1b9d1?poll=true"
+    },
+    {
+      "error": null,
+      "evaluator_errors": {},
+      "example_id": "9c6d14545f99",
+      "latency_ms": 11978.5,
+      "repetition": 3,
+      "scores": {
+        "answer_correct": 1.0,
+        "found_the_source": 1.0,
+        "refused_correctly": 1.0
+      },
+      "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/projects/p/436b61c6-436c-4fa0-b7bf-21b870acf050/r/01a13488-0297-7cf1-a031-e905c745a1eb?poll=true"
+    }
+  ],
+  "schema": 1,
+  "url": "https://smith.langchain.com/o/aab54c19-84ad-4e02-a731-05b0917acc96/datasets/ec0da4ad-119b-447b-969b-099a02b6a9f5/compare?selectedSessions=436b61c6-436c-4fa0-b7bf-21b870acf050"
+}
