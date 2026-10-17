@@ -21,6 +21,22 @@ original single-pass version of this idea), Paddock (WorkHorse's desktop app) an
 portfolio site. That is 1,052 sections of Markdown. Point it at your own clones with a corpus
 file (see `corpus.example.toml`) to cover private repositories too.
 
+## For Tannhauser Gate
+
+Tannhauser Gate's agents use the search half of this agent and do their own reading, so a
+lookup costs nothing outside their own session. `corpus.tannhauser.toml` lists Tannhauser's
+record and every project it builds, as folders next to this one. Tannhauser's lessons become
+one section each, cited by label (`tannhauser:notes/rulebook.md#R5`), and each run folder's
+design, decisions, reviews and retro become sections too.
+
+```bash
+STUDBOOK_CORPUS=corpus.tannhauser.toml PYTHONPATH=src python3 -m studbook_agent.record search "why cloud merge"
+STUDBOOK_CORPUS=corpus.tannhauser.toml PYTHONPATH=src python3 -m studbook_agent.record read "tannhauser:notes/rulebook.md#R5"
+```
+
+This path needs only Python 3.11 or later, with nothing installed, and rebuilds its index when
+any file it covers changes.
+
 ## How it works
 
 It is a LangGraph graph with three nodes:

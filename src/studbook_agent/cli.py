@@ -2,7 +2,7 @@
 
 studbook-agent index           build the index and print what it holds
 studbook-agent ask "question"  answer one question, with citations
-studbook-agent search "words"  run one search, no model
+studbook-agent search "words"  run one search, no model (needs only Python)
 studbook-agent mcp             serve the agent to other agents over MCP (stdio)
 """
 
@@ -10,7 +10,7 @@ import argparse
 import json
 import sys
 
-from studbook_agent.graph import ask, corpus_path, load_index
+from studbook_agent.record import corpus_path, load_index
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -42,6 +42,9 @@ def main(argv: list[str] | None = None) -> int:
 
         server().run("stdio")
         return 0
+    # The graph pulls in the model libraries, so only the paid path loads it.
+    from studbook_agent.graph import ask
+
     result = ask(args.question)
     if args.json:
         print(json.dumps(result, indent=2))

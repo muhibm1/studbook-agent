@@ -37,6 +37,11 @@ class Repo:
     path: Path
     include: tuple[str, ...]
     exclude: tuple[str, ...] = ()
+    # "markdown" (the default) or "tannhauser": a Tannhauser Gate repository, whose lessons and
+    # run records get their own readers (`tannhauser.py`).
+    kind: str = "markdown"
+    # Skipped, not an error, when the folder is missing: a cloud thread clones only some repos.
+    optional: bool = False
 
 
 @dataclass(frozen=True)
@@ -66,6 +71,8 @@ def load_corpus(config: Path) -> list[Repo]:
                 path=path,
                 include=tuple(entry.get("include", ["**/*.md"])),
                 exclude=tuple(entry.get("exclude", ())),
+                kind=entry.get("kind", "markdown"),
+                optional=bool(entry.get("optional", False)),
             )
         )
     return repos
@@ -77,6 +84,9 @@ def matches(relative: str, patterns: tuple[str, ...]) -> bool:
         if fnmatch.fnmatch(relative, pattern):
             return True
         if pattern.startswith("**/") and fnmatch.fnmatch(relative, pattern[3:]):
+            return True
+        # `/**/` also matches no folder at all: `docs/**/*.md` covers `docs/ci.md`.
+        if "/**/" in pattern and fnmatch.fnmatch(relative, pattern.replace("/**/", "/")):
             return True
     return False
 
@@ -195,7 +205,16 @@ def read_corpus(repos: list[Repo]) -> list[Section]:
     """Every section of every file of every repository."""
     sections: list[Section] = []
     for repo in repos:
+        if repo.optional and not repo.path.is_dir():
+            continue
         for path in files_of(repo):
             text = path.read_text(encoding="utf-8", errors="replace")
-            sections.extend(sections_of(repo.name, path.relative_to(repo.path).as_posix(), text))
+            relative = path.relative_to(repo.path).as_posix()
+            if repo.kind == "tannhauser":
+                # Imported here: the Tannhauser readers build `Section`s from this module.
+                from studbook_agent.tannhauser import tannhauser_sections
+
+                sections.extend(tannhauser_sections(repo.name, relative, text))
+            else:
+                sections.extend(sections_of(repo.name, relative, text))
     return sections
