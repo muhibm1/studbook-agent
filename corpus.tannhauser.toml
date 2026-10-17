@@ -1,0 +1,89 @@
+# The corpus Tannhauser Gate's agents search: Tannhauser's own record (lessons, ledger, run
+# folders) plus the written record of every project it builds. Paths are siblings of this
+# repository, which holds both in the project's cloud threads (/home/user/<repo>) and on the
+# Mac (~/C.Projects/<repo>). Every repository except Tannhauser's is optional, because a
+# thread clones only some of them.
+#
+#   STUDBOOK_CORPUS=corpus.tannhauser.toml PYTHONPATH=src python3 -m studbook_agent.record search "why cloud merge"
+#
+# The search needs only Python. The index rebuilds itself when any file below changes.
+
+[[repo]]
+name = "tannhauser"
+path = "../tannhauser-gate"
+kind = "tannhauser"
+include = ["README.md", "docs/**/*.md", "notes/**/*.md", "runs/**/*.json"]
+
+[[repo]]
+name = "wasl"
+path = "../wasl"
+optional = true
+include = ["README.md", "plan/*.md", "checklists/*.md", "docs/**/*.md"]
+
+[[repo]]
+name = "shu"
+path = "../Shu"
+optional = true
+include = ["README.md", "docs/adr/*.md", "docs/research/*.md", "docs/superpowers/**/*.md", "docs/*.md"]
+
+[[repo]]
+name = "portfolio"
+path = "../Portfolio"
+optional = true
+# The site's change folders hold very long generated specs and test logs; keep the decisions.
+include = [
+  "README.md",
+  "docs/design-brief.md",
+  "docs/sdlc/*/adr/*.md",
+  "docs/sdlc/*/brief.md",
+  "docs/sdlc/*/ship.md",
+  "docs/sdlc/*/retro.md",
+]
+
+[[repo]]
+name = "agentops"
+path = "../agentops"
+optional = true
+include = ["README.md", "CONTRIBUTING.md", "docs/**/*.md"]
+
+[[repo]]
+name = "workhorse"
+path = "../workhorse"
+optional = true
+include = ["README.md", "CHANGELOG.md", "docs/**/*.md"]
+exclude = ["docs/continuation-*.md"]
+
+[[repo]]
+name = "studbook"
+path = "../studbook"
+optional = true
+include = ["README.md", "docs/**/*.md"]
+
+[[repo]]
+name = "studbook-agent"
+path = "."
+include = ["README.md", "docs/**/*.md"]
+
+[[repo]]
+name = "orion"
+path = "../orion"
+optional = true
+include = ["README.md", "docs/**/*.md"]
+
+[[repo]]
+name = "garvis"
+path = "../garvis"
+optional = true
+include = ["README.md", "docs/**/*.md"]
+
+[[repo]]
+name = "atelier"
+path = "../atelier"
+optional = true
+include = ["README.md", "docs/**/*.md"]
+
+[[repo]]
+name = "flywheel"
+path = "../flywheel"
+optional = true
+include = ["README.md", "docs/**/*.md"]

@@ -17,8 +17,6 @@ The model decides what to search and what to read. Code decides everything else:
 import os
 import re
 from collections.abc import Sequence
-from functools import lru_cache
-from pathlib import Path
 from typing import Annotated, Any, Literal, TypedDict
 
 from langchain_core.language_models import BaseChatModel
@@ -35,8 +33,8 @@ from langgraph.graph.message import add_messages
 from pydantic import BaseModel, Field
 
 from studbook_agent import prompts
-from studbook_agent.corpus import load_corpus, read_corpus
 from studbook_agent.index import Index
+from studbook_agent.record import load_index
 
 MAX_ROUNDS = 6
 ANSWER_ATTEMPTS = 2
@@ -74,26 +72,6 @@ class Answer(BaseModel):
     answer: str = Field(description="Two to four plain sentences, or one sentence if refused.")
     citations: list[str] = Field(description="Ids of the sections the answer relies on.")
     refused: bool = Field(description="True when the record does not answer the question.")
-
-
-def corpus_path() -> Path:
-    """The corpus file: `STUDBOOK_CORPUS`, else the public corpus next to this package."""
-    configured = os.environ.get("STUDBOOK_CORPUS")
-    if configured:
-        return Path(configured)
-    return Path(__file__).resolve().parents[2] / "corpus.public.toml"
-
-
-@lru_cache(maxsize=4)
-def load_index(corpus: str | None = None) -> Index:
-    """The index for a corpus file, built once per process (or read from its cache)."""
-    path = Path(corpus) if corpus else corpus_path()
-    cache = path.parent / ".index" / f"{path.stem}.json"
-    if cache.exists() and cache.stat().st_mtime >= path.stat().st_mtime:
-        return Index.load(cache)
-    index = Index(read_corpus(load_corpus(path)))
-    index.save(cache)
-    return index
 
 
 def make_tools(index: Index) -> list[Any]:
