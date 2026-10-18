@@ -1,5 +1,7 @@
 # Studbook agent
 
+> **Retired on 2026-10-18.** Orion's record (`python3 -m orion.record`, MCP tools `search_record` and `read_record` in [muhibm1/orion](https://github.com/muhibm1/orion)) now does this job. This repository is kept read-only for reference; its documents are still searchable through Orion.
+
 **Ask why a project was built the way it was, and get an answer that quotes the project's own
 records, or an honest "Not in the record".**
 
