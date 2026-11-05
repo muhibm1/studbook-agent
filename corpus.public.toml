@@ -1,27 +1,17 @@
-# The public corpus: the published snapshots of the projects, fetched by
+# The public corpus: the public repositories of the projects, fetched by
 # scripts/fetch_public_corpus.sh into ./corpus. Point STUDBOOK_CORPUS at your own file
 # (see corpus.example.toml) to index private clones instead.
 
 [[repo]]
 name = "agentops"
-path = "corpus/agentops-snapshot"
+path = "corpus/agentops"
 include = ["**/*.md"]
 
 [[repo]]
 name = "workhorse"
-path = "corpus/workhorse-snapshot"
+path = "corpus/workhorse"
 include = ["**/*.md"]
 exclude = ["agents/**", "desk/**"]
-
-[[repo]]
-name = "studbook"
-path = "corpus/studbook-snapshot"
-include = ["**/*.md"]
-
-[[repo]]
-name = "paddock"
-path = "corpus/paddock-snapshot"
-include = ["**/*.md"]
 
 [[repo]]
 name = "portfolio"

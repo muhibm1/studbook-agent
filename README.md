@@ -17,10 +17,12 @@ Context Protocol, a standard way for one agent to call another's tools).
 
 ## What it covers
 
-The default corpus is the published snapshots of five of my projects: AgentOps (an
-incident-response agent), WorkHorse (a delivery workflow for coding agents), Studbook (the
-original single-pass version of this idea), Paddock (WorkHorse's desktop app) and this
-portfolio site. That is 1,052 sections of Markdown. Point it at your own clones with a corpus
+The default corpus is three of my public repositories: AgentOps (an incident-response agent),
+WorkHorse (a delivery workflow for coding agents) and my portfolio site. That is 1,721 sections
+of Markdown (counted 2026-11-05 with `studbook-agent index`). The measured results below were
+recorded on an earlier five-project corpus of 1,052 sections, which also held Studbook (the
+original single-pass version of this idea) and Paddock (WorkHorse's desktop app); those
+snapshots are no longer published. Point it at your own clones with a corpus
 file (see `corpus.example.toml`) to cover private repositories too.
 
 ## How it works
@@ -80,7 +82,7 @@ avoid. The gate blocked the change and I kept the original prompt. The report is
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt -r requirements-dev.txt && pip install --no-deps -e .
-sh scripts/fetch_public_corpus.sh          # clones the five public snapshots into ./corpus
+sh scripts/fetch_public_corpus.sh          # clones the three public repositories into ./corpus
 export ANTHROPIC_API_KEY=...               # your key
 studbook-agent index                        # what the index holds
 studbook-agent search "approval interrupt"  # one search, no model
